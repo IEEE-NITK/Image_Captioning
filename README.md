@@ -13,7 +13,7 @@
 4. Inbasekaran.P
 5. K A Gaganashree
 
-####[View Project](https://meet.google.com/efz-jzkd-ewa)
+Google meet: [View Project](https://meet.google.com/efz-jzkd-ewa)
 
 ### **ABSTRACT**
 
@@ -57,7 +57,7 @@ All the above concepts are consolidated into the final architecture.
 
 ![Inception](download.png)
 
-#### _C. Why Inception V3?__
+#### __C. Why Inception V3?__
 
 Inception v3 focuses on burning less computational power.Compared to VGGNet, Inception Networks have proved to be more computationally efficient, in terms of the number of parameters generated and the economical cost incurred (regarding memory and other resources).
 
@@ -117,7 +117,7 @@ The BLEU score is similar to the precision, except that each occurrence of an n-
 An individual N-gram score is the evaluation of just matching grams of a specific order, such as single words (1-gram) or word pairs (2-gram or bigram).
 The weights are specified as a tuple where each index refers to the gram order. To calculate the BLEU score only for 1-gram matches, you can specify a weight of 1 for 1-gram and 0 for 2, 3 and 4 (1, 0, 0, 0).
 
-__Note:__
+_Note:_
 BLEU 1 : Unigram BLEU Score
 BLEU 2 : Bigram BLEU Score
 BLEU 3 : Trigram BLEU Score
