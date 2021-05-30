@@ -1,7 +1,7 @@
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 <h1 align="centre">#**IMAGE CAPTIONING WITH ATTENTION MECHANISM**#</h1>
 
-##**MENTORS*##
+##**MENTORS**##
 1.Chandan Kumar 
 2.Rohan Rao H J
 
