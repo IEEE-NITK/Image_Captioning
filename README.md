@@ -13,7 +13,7 @@
 4. Inbasekaran.P
 5. K A Gaganashree
 
-####![View Project](https://meet.google.com/efz-jzkd-ewa)
+####[View Project](https://meet.google.com/efz-jzkd-ewa)
 
 ### **ABSTRACT**
 
@@ -232,40 +232,40 @@ The authors would like to thank IEEE for conducting envision project and Mentors
 
 6. [Andrej Karpathy. 2015. Cs231n: Convolutional neural networks for visual recognition.](http://cs231n.github.io/.)
 
-7. [Harshall Lamba. Image Captioning with Keras. 2018.] (https://towardsdatascience.com/.)
+7. [Harshall Lamba. Image Captioning with Keras. 2018.](https://towardsdatascience.com/.)
 
-8. [Tensorflow. Image captioning with visual attention.] (https://www.tensorflow.org/overview.)
+8. [Tensorflow. Image captioning with visual attention.](https://www.tensorflow.org/overview.)
 
-9. [Bharath Raj. A Simple Guide to the Versions of the Inception Network. 2018.] (https://towardsdatascience.com/>)
+9. [Bharath Raj. A Simple Guide to the Versions of the Inception Network. 2018.](https://towardsdatascience.com/>)
 
-10. [Subham Sarkar. Image Captioning using Attention Mechanism. 2020.] (https://github.com/SubhamIO/)
+10. [Subham Sarkar. Image Captioning using Attention Mechanism. 2020.](https://github.com/SubhamIO/)
 
-11. [JournalDev. How to calculate BLEU score using Phython. 2020.] \texttt{<https://www.journaldev.com/> .}
+11. [JournalDev. How to calculate BLEU score using Phython. 2020.](<https://www.journaldev.com/>)
 
 12. Andrea Galassi , Marco Lippi , and Paolo Torroni.Attention in Natural Language Processing. 2020.
 
-13. [Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin. 2017.Attention Is All You Need.](arXiv preprint arXiv:1706.03762)
+13. Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin. 2017.Attention Is All You Need.__arXiv preprint arXiv:1706.03762__
 
-14. [Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio. 2016.Neural Machine Translation by Jointly Learning to Align and Translate.](arXiv preprint arXiv:1409.0473)
+14. Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio. 2016.Neural Machine Translation by Jointly Learning to Align and Translate.__arXiv preprint arXiv:1409.0473__
 
 15. Kishore Papineni, Salim Roukos,Todd Ward, and Wei-Jing Zhu. Bleu: a method for automatic evaluation of machine translation. Proceedings of the 40th annual meeting on association for computational linguistics 2002 , pages 311–318
 
-16. [Pierre Sermanet, David Eigen, Xiang Zhang, Michael Mathieu, Rob Fergus, and Yann LeCun. 2013. Overfeat: Integrated recognition, localization and detection using convolutional networks.](arXiv preprint arXiv:1312.6229}
+16. Pierre Sermanet, David Eigen, Xiang Zhang, Michael Mathieu, Rob Fergus, and Yann LeCun. 2013. Overfeat: Integrated recognition, localization and detection using convolutional networks.__arXiv preprint arXiv:1312.6229__
 
-17. [Simonyan and Zisserman2014 Karen Simonyan and Andrew Zisserman. 2014. Very deep convolutional networks for large-scale image recognition.](arXiv preprint arXiv:1409.1556.)
+17. Simonyan and Zisserman2014 Karen Simonyan and Andrew Zisserman. 2014. Very deep convolutional networks for large-scale image recognition.__arXiv preprint arXiv:1409.1556.__
 
 18. [Harshall Lamba. 2019.A Guide to build Sequence to sequence models using LSTM.](https://towardsdatascience.com/.)
 
 19. [Szegedy et al.2015] Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir Anguelov, Dumitru Erhan, Vincent Vanhoucke, and Andrew Rabinovich. 2015. Going deeper with convolutions.
 
-20. [Karen Simonyan, Andrew Zisserman. 2014. Very Deep Convolutional Networks for Large-Scale Image Recognition.](arXiv preprint  arXiv:1409.1556)
+20. Karen Simonyan, Andrew Zisserman. 2014. Very Deep Convolutional Networks for Large-Scale Image Recognition.__arXiv preprint  arXiv:1409.1556__
 
-21. [Justin Johnson, Andrej Karpathy, Li Fei-Fei. 2015. DenseCap: Fully Convolutional Localization Networks for Dense Captioning.](arXiv preprint  arXiv:1511.07571.)
+21. Justin Johnson, Andrej Karpathy, Li Fei-Fei. 2015. DenseCap: Fully Convolutional Localization Networks for Dense Captioning.__arXiv preprint arXiv:1511.07571.__
 
-22. [Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan. 2015. Show and Tell: A Neural Image Caption Generator.](arXiv preprint   arXiv:1411.4555.)
+22. Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan. 2015. Show and Tell: A Neural Image Caption Generator.__arXiv preprint arXiv:1411.4555.__
 
 23. [Russakovsky et al.2015] Olga Russakovsky, Jia Deng,Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla,Michael Bernstein, et al. 2015. Imagenet large scale visual recognition challenge. IJCV, 115(3):211–252.
 
 24. [Vihar Kurama. 2020. A Review of Popular Deep Learning Architectures: ResNet, InceptionV3, and SqueezeNet](https://blog.paperspace.com/tag/deep-learning/.)
 
-25. [Blaine Rister,Dieterich Lawson. 2016. Image Captioning with Attention] (http://cs231n.stanford.edu/reports/2016/pdfs.)
+25. [Blaine Rister,Dieterich Lawson. 2016. Image Captioning with Attention](http://cs231n.stanford.edu/reports/2016/pdfs.)
