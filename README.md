@@ -48,14 +48,14 @@ We can either train CNN from scratch or make use of a pre trained model, trained
 5. Grid size reduction: Grid size reduction is usually done by pooling operations.
 
 <img src="Inception1.jpg"
-     alt="Markdown Monster icon"
+     alt="Inception"
      style="float: left; margin-right: 10px;" />
 
 **Final Architecture**
 All the above concepts are consolidated into the final architecture.
 
 <img src="download.png"
-     alt="Markdown Monster icon"
+     alt="Inception"
      style="float: left; margin-right: 10px;" />
 
 #### _C. Why Inception V3?__
@@ -67,17 +67,13 @@ Inception v3 focuses on burning less computational power.Compared to VGGNet, Inc
 Traditional feed-forward neural networks take in a fixed amount of input data all at the same time and produce a fixed amount of output each time. On the other hand, RNNs do not consume all the input data at once. Instead, they take them in one at a time and in a sequence. At each step, the RNN does a series of calculations before producing an output. The output, known as the hidden state, is then combined with the next input in the sequence to produce another output.
 A Gated Recurrent Unit (GRU), as its name suggests, is a variant of the RNN architecture, and uses gating mechanisms to control and manage the flow of information between cells in the neural network. GRUs were introduced only in 2014 by Cho, et al. The structure of the GRU allows it to adaptively capture dependencies from large sequences of data without discarding information from earlier parts of the sequence. This is achieved through its gating units, which solve the vanishing/exploding gradient problem of traditional RNNs.
 
- gate_{reset}=\sigma(W_{input_{reset}}*X_t+W_{hidden_{reset}}*h_{t-1})
- r=\tanh(gate_{reset}\oplus(W_{h1}*h_{t-1})+W_{X1}*X_t)  
- gate_{update}=\sigma(W_{input_{update}}*X_t+W_{hidden_{update}}*h_{t-1})
- u=gate_{update}\oplus h_{t-1}
- h_t=r\oplus (1-gate_{update})+u
+![formulas](formulas.jpg)
 
  <img src="gru.jpg"
-     alt="Markdown Monster icon"
+     alt="GRU"
      style="float: left; margin-right: 10px;" />
 
- ### **ATTENTION MECHANISM:**
+### **ATTENTION MECHANISM:**
 
  The standard seq2seq model is generally unable to accurately process long input sequences, since only the last hidden state of the encoder RNN is used as the context vector for the decoder. On the other hand, the Attention Mechanism directly addresses this issue as it retains and utilises all the hidden states of the input sequence during the decoding process. It does this by creating a unique mapping between each time step of the decoder output to all the encoder hidden states. This means that for each output that the decoder makes, it has access to the entire input sequence and can selectively pick out specific elements from that sequence to produce the output.
 
@@ -86,10 +82,11 @@ A Gated Recurrent Unit (GRU), as its name suggests, is a variant of the RNN arch
 Bahdanau’s Attention, commonly referred to as Additive Attention, came from a paper by Dzmitry Bahdanau. The model aimed at improving the sequence-to-sequence model in machine translation by aligning the decoder with the relevant input sentences and thereby implementing Attention.
 
  <img src="decoder.jpg"
-     alt="Markdown Monster icon"
+     alt="decoder"
      style="float: left; margin-right: 10px;" />
 
- #### __B.Steps involved in Attention Mechanism__
+
+#### __B.Steps involved in Attention Mechanism__
 
  The entire step-by-step process involved in attention model is as follows:
     1.Producing the Encoder Hidden States - Encoder produces hidden states of each element in the input sequence
@@ -100,14 +97,14 @@ Bahdanau’s Attention, commonly referred to as Additive Attention, came from a 
     6.The process (steps 2-5) repeats itself for each time step of the decoder until an token is produced or output is past the specified maximum length
 
  <img src="attention2.png"
-     alt="Markdown Monster icon"
+     alt="attention"
      style="float: left; margin-right: 10px;" />
 
 ### **EXPERIMENTS**
 
 In this section, we evaluate the proposed network architectures on a real image captioning dataset.
 
-#### __A.Dataset__ 
+#### __A.Dataset__
 
 There are many datasets for image captioning.
 We planned to use the Common Objects in Context (COCO) dataset from Microsoft, however, due to computational and algorithmic limitations, we decided to limit the scope of our project to
@@ -120,11 +117,9 @@ We planned to use the Common Objects in Context (COCO) dataset from Microsoft, h
 
 #### __B.Metrics__
 
-The objective of Machine learning is to generate a new sequence of most probable caption of an image based on the available corpus words of testing dataset.  Thus, we need a way to quantify the average accuracy of the system on the whole dataset. There are several metrics by which to judge the quality of machine-produced text and none without criticism.\par We chose to use the Bilingual Evaluation Understudy (BLEU) metric, as it is one of the simplest and best known.BLEU is an algorithm for  evaluating the quality of text which has been machine-translated from one natural language to another. Before describing the BLEU score, we will describe a simpler and better known metric, called the precision. Let x be a vector of machine-produced n-grams, and let y be a vector of ground truth n-grams. For example, x could be the words in a sentence describing a movie frame,with xi representing an individual word, and y could be words from scripts describing the same scene. We often wish to have a ground truth y representing the many possible linguistic translations of the same idea.The precision is $\{x \in y\}$\\
-\break
-\[
-    p=\frac{1}{N}\times\sum_{i=1}^{N} 1
-\]
+The objective of Machine learning is to generate a new sequence of most probable caption of an image based on the available corpus words of testing dataset.  Thus, we need a way to quantify the average accuracy of the system on the whole dataset. There are several metrics by which to judge the quality of machine-produced text and none without criticism.\par We chose to use the Bilingual Evaluation Understudy (BLEU) metric, as it is one of the simplest and best known.BLEU is an algorithm for  evaluating the quality of text which has been machine-translated from one natural language to another. Before describing the BLEU score, we will describe a simpler and better known metric, called the precision. Let x be a vector of machine-produced n-grams, and let y be a vector of ground truth n-grams. For example, x could be the words in a sentence describing a movie frame,with xi representing an individual word, and y could be words from scripts describing the same scene. We often wish to have a ground truth y representing the many possible linguistic translations of the same idea.The precision is {x belongs to y}
+
+![for](for.jpg)
 
 The BLEU score is similar to the precision, except that each occurrence of an n-gram in y can account for only one occurrence in x. For example, the statement The the the the the the would receive a perfect precision if the reference translation contained the word the,but not necessarily a perfect BLEU score, as we are limited to counting only as many occurrences of the as appear in y.
 An individual N-gram score is the evaluation of just matching grams of a specific order, such as single words (1-gram) or word pairs (2-gram or bigram).
@@ -141,17 +136,17 @@ BLEU 3 : Trigram BLEU Score
 
 - Image features of length 2048 were extracted using a pretrained Inception v3 model.To optimize the GRU model parameters, we used the Adam descent method in batches of 100 pairs of images and captions.
 
-- To make the classification problem feasible, the vocabulary was restricted to the 2,000 most common words from the 8K dataset. All other words were replaced with a special unknown token $<unk>$.
+- To make the classification problem feasible, the vocabulary was restricted to the 2,000 most common words from the 8K dataset. All other words were replaced with a special unknown token < unk >.
 
-- All tokens less than 38 words in length were padded with a special unknown token, signifying that no more words are needed to describe the image. Note that the 38-word limit includes $<startofseq>$ and $<endofseq>$ tokens enclosing each caption.
+- All tokens less than 38 words in length were padded with a special unknown token, signifying that no more words are needed to describe the image. Note that the 38-word limit includes < startofseq > and < endofseq > tokens enclosing each caption.
 
-- After thesWhile many captions are informative, some describe a scene completely different than the one in the image, while others are complete gibberish. It should be noted that most gibberish captions make use of the  $<unk>$ token. e modifications, the model was trained for 30 epochs, on 8K dataset.We could achieve an accuracy of 98.16\% on train set and an accuracy of 97.8\%  on test set. Refer Fig 5 for the Loss plot
+- After thesWhile many captions are informative, some describe a scene completely different than the one in the image, while others are complete gibberish. It should be noted that most gibberish captions make use of the < unk > token. e modifications, the model was trained for 30 epochs, on 8K dataset.We could achieve an accuracy of 98.16\% on train set and an accuracy of 97.8\%  on test set. Refer Fig 5 for the Loss plot
 
 <img src="loss_epoch.jpg"
-     alt="Graph of loss vs epoch"
+     alt="Loss epoch"
      style="float: left; margin-right: 10px;" />
 
-- While many captions are informative, some describe a scene completely different than the one in the image, while others are complete gibberish. It should be noted that most gibberish captions make use of the  $<unk>$ token.
+- While many captions are informative, some describe a scene completely different than the one in the image, while others are complete gibberish. It should be noted that most gibberish captions make use of the  < unk > token.
 
 - We used a pretrained model for Inception v3 (CNN) with ImageNet weights and implemented the Decoder in TensorFlow.
 
@@ -159,15 +154,11 @@ BLEU 3 : Trigram BLEU Score
 
 - The next page contains some captions generated by our neural network
 
-<img src="Result.jpg"
-     alt="Graph of loss vs epoch"
-     style="float: left; margin-right: 10px;" />
+![results](Result.jpg)
 
 Finally, we show some examples of  computer generated captions along with blue scores on the test dataset.
 
-<img src="Picture1.png"
-     alt="Graph of loss vs epoch"
-     style="float: left; margin-right: 10px;" />
+![pic](Picture1.png)
 
 Prediction Caption: four basketball player in green
 Real Captions:
@@ -177,25 +168,25 @@ Real Captions:
 3) four men playing basketball two from each
 4) two boy in green and white uniform play basketball with two boy in blue and white uniform
 5) young men playing basketball in competition
-$BLEU Score 1-> 100.00$
-$BLEU Score 2-> 100.00$
-$BLEU Score 3-> 87.48$
+BLEU Score 1-> 100.00
+BLEU Score 2-> 100.00
+BLEU Score 3-> 87.48
 
 <img src="Picture2.png"
      alt="Graph of loss vs epoch"
      style="float: left; margin-right: 20px;" />
 
-Prediction Caption: boy jump over the trampoline
-Real Captions:
+Prediction Caption: boy jump over te trampoline
+Real Cptions:
 
 1) boy jumping over another boy on trampoline
 2) boy jump over another boy on trampoline
 3) one boy jump over another boy on trampoline
 4) the little boy jump over another little boy on the trampoline
 5) two boy jumping on trampoline
-$BLEU Score 1-> 100.00$
-$BLEU Score 2-> 86.60$
-$BLEU Score 3-> 63.29$
+BLEU Score 1-> 100.00
+BLEU Score 2-> 86.60
+BLEU Score 3-> 63.29
 
 The above two captions are examples of very good captions, which very relevant to the situation in the image.But not all captions are relevant like these examples.
 
@@ -211,9 +202,9 @@ Real Captions:\newline
 3) dog roll on his back
 4) dog roll on his back in the grass
 5) dog with paw in the air lying on grass
-$BLEU Score 1-> 40.00$
-$BLEU Score 2-> 0.00$
-$BLEU Score 3-> 0.00$
+BLEU Score 1-> 40.00
+BLEU Score 2-> 0.00
+BLEU Score 3-> 0.00
 
 <img src="Picture4.png"
      alt="Graph of loss vs epoch"
@@ -227,9 +218,9 @@ Real Captions:
 3) three skydiver are in formation above the cloud
 4) trio of skydiver holding hand in sky
 5) two people are parachuting over white cloud
-$BLEU Score 1-> 28.22$
-$BLEU Score 2-> 0.00$
-$BLEU Score 3-> 0.00$
+BLEU Score 1-> 28.22
+BLEU Score 2-> 0.00
+BLEU Score 3-> 0.00
 
 In the above case the model is struggling to predict the captions, from Fig6 we can tell that the attention weights are not correct. This can be improved by training on a larger data set.
 
