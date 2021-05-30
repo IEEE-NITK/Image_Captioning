@@ -7,11 +7,13 @@
 
 ## **MENTEES**
 
-1.Aakaash G.Acharya
-2.Apurva S
-3.Deepanshu Gupta
-4.Inbasekaran.P
-5.K A Gaganashree
+1. Aakaash G.Acharya
+2. Apurva S
+3. Deepanshu Gupta
+4. Inbasekaran.P
+5. K A Gaganashree
+
+####![View Project](https://meet.google.com/efz-jzkd-ewa)
 
 ### **ABSTRACT**
 
@@ -47,16 +49,13 @@ We can either train CNN from scratch or make use of a pre trained model, trained
 4. Auxiliary classifier: An auxiliary classifier is a small CNN inserted between layers during training, and the loss incurred is added to the main network loss. In  Inception v3 an auxiliary classifier acts as a regularizer.
 5. Grid size reduction: Grid size reduction is usually done by pooling operations.
 
-<img src="Inception1.jpg"
-     alt="Inception"
-     style="float: left; margin-right: 10px;" />
+![Inception](Inception1.jpg)
+
 
 **Final Architecture**
 All the above concepts are consolidated into the final architecture.
 
-<img src="download.png"
-     alt="Inception"
-     style="float: left; margin-right: 10px;" />
+![Inception](download.png)
 
 #### _C. Why Inception V3?__
 
@@ -69,9 +68,7 @@ A Gated Recurrent Unit (GRU), as its name suggests, is a variant of the RNN arch
 
 ![formulas](formulas.jpg)
 
- <img src="gru.jpg"
-     alt="GRU"
-     style="float: left; margin-right: 10px;" />
+![gru](gru.jpg)
 
 ### **ATTENTION MECHANISM:**
 
@@ -81,10 +78,7 @@ A Gated Recurrent Unit (GRU), as its name suggests, is a variant of the RNN arch
 
 Bahdanau’s Attention, commonly referred to as Additive Attention, came from a paper by Dzmitry Bahdanau. The model aimed at improving the sequence-to-sequence model in machine translation by aligning the decoder with the relevant input sentences and thereby implementing Attention.
 
- <img src="decoder.jpg"
-     alt="decoder"
-     style="float: left; margin-right: 10px;" />
-
+![decoder](decoder.jpg)
 
 #### __B.Steps involved in Attention Mechanism__
 
@@ -96,9 +90,7 @@ Bahdanau’s Attention, commonly referred to as Additive Attention, came from a 
     5.Decoding the Output - the context vector is concatenated with the previous decoder output and fed into the Decoder RNN for that time step along with the previous decoder hidden state to produce a new output
     6.The process (steps 2-5) repeats itself for each time step of the decoder until an token is produced or output is past the specified maximum length
 
- <img src="attention2.png"
-     alt="attention"
-     style="float: left; margin-right: 10px;" />
+![attention](attention2.png)
 
 ### **EXPERIMENTS**
 
@@ -142,9 +134,7 @@ BLEU 3 : Trigram BLEU Score
 
 - After thesWhile many captions are informative, some describe a scene completely different than the one in the image, while others are complete gibberish. It should be noted that most gibberish captions make use of the < unk > token. e modifications, the model was trained for 30 epochs, on 8K dataset.We could achieve an accuracy of 98.16\% on train set and an accuracy of 97.8\%  on test set. Refer Fig 5 for the Loss plot
 
-<img src="loss_epoch.jpg"
-     alt="Loss epoch"
-     style="float: left; margin-right: 10px;" />
+![loss_epoch](loss_epoch.jpg)
 
 - While many captions are informative, some describe a scene completely different than the one in the image, while others are complete gibberish. It should be noted that most gibberish captions make use of the  < unk > token.
 
@@ -158,7 +148,7 @@ BLEU 3 : Trigram BLEU Score
 
 Finally, we show some examples of  computer generated captions along with blue scores on the test dataset.
 
-![pic](Picture1.png)
+![pic1](Picture1.png)
 
 Prediction Caption: four basketball player in green
 Real Captions:
@@ -172,9 +162,7 @@ BLEU Score 1-> 100.00
 BLEU Score 2-> 100.00
 BLEU Score 3-> 87.48
 
-<img src="Picture2.png"
-     alt="Graph of loss vs epoch"
-     style="float: left; margin-right: 20px;" />
+![pic2](Picture2.png)
 
 Prediction Caption: boy jump over te trampoline
 Real Cptions:
@@ -190,12 +178,10 @@ BLEU Score 3-> 63.29
 
 The above two captions are examples of very good captions, which very relevant to the situation in the image.But not all captions are relevant like these examples.
 
-<img src="Picture3.png"
-     alt="Graph of loss vs epoch"
-     style="float: left; margin-right: 10px;" />
+![pic3](Picture3.png)
 
-Prediction Caption: dog jumping towards the side\newline
-Real Captions:\newline
+Prediction Caption: dog jumping towards the side
+Real Captions:
 
 1) black and tan dog roll on his back in field
 2) black dog rolling in the green grass
@@ -206,11 +192,9 @@ BLEU Score 1-> 40.00
 BLEU Score 2-> 0.00
 BLEU Score 3-> 0.00
 
-<img src="Picture4.png"
-     alt="Graph of loss vs epoch"
-     style="float: left; margin-right: 10px;" />
+![pic4](Picture4.png)
 
-Prediction Caption: three red $<unk>$ attire dive and near
+Prediction Caption: three red __<unk>__ attire dive and near
 Real Captions:
 
 1) three person sky dive team in the air performing stun
@@ -224,9 +208,7 @@ BLEU Score 3-> 0.00
 
 In the above case the model is struggling to predict the captions, from Fig6 we can tell that the attention weights are not correct. This can be improved by training on a larger data set.
 
-<img src="Picture5.png"
-     alt="Attention captioning example. White areas have higher attention weights."
-     style="float: left; margin-right: 10px;" />
+![pic5](Picture5.png)
 
 ### **CONCLUSION**
 
@@ -243,46 +225,47 @@ The authors would like to thank IEEE for conducting envision project and Mentors
 2. Kyunghyun Cho, Bart Van Merrienboer,Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares,Holger Schwenk, and Yoshua Bengio. 2014. Learning phrase representations using rnn encoder-decoder for statistical machine translation.
 
 3. [Gabriel Loye, Attention Mechanism. 2015.](https://blog.floydhub.com/)
+
 4. [Understanding LSTM Models. 2015.](https://colah.github.io/)
 
-5. Andrej Karpathy, The Unreasonable Effectiveness of Recurrent Neural Networks. 2015.\\\texttt{http://karpathy.github.io/}
+5. [Andrej Karpathy, The Unreasonable Effectiveness of Recurrent Neural Networks. 2015.](http://karpathy.github.io/)
 
-6. Andrej Karpathy. 2015. Cs231n: Convolutional neural networks for visual recognition.\\\texttt{http://cs231n.github.io/.}
+6. [Andrej Karpathy. 2015. Cs231n: Convolutional neural networks for visual recognition.](http://cs231n.github.io/.)
 
-7. Harshall Lamba. Image Captioning with Keras. 2018. \\\texttt{https://towardsdatascience.com/.}
+7. [Harshall Lamba. Image Captioning with Keras. 2018.] (https://towardsdatascience.com/.)
 
-8. Tensorflow. Image captioning with visual attention .\\\texttt{https://www.tensorflow.org/overview.}
+8. [Tensorflow. Image captioning with visual attention.] (https://www.tensorflow.org/overview.)
 
-9. Bharath Raj. A Simple Guide to the Versions of the Inception Network. 2018. \texttt{<https://towardsdatascience.com/>.}
+9. [Bharath Raj. A Simple Guide to the Versions of the Inception Network. 2018.] (https://towardsdatascience.com/>)
 
-10. Subham Sarkar. Image Captioning using Attention Mechanism. 2020. \texttt{<https://github.com/SubhamIO/> .}
+10. [Subham Sarkar. Image Captioning using Attention Mechanism. 2020.] (https://github.com/SubhamIO/)
 
-11. JournalDev. How to calculate BLEU score using Phython. 2020. \texttt{<https://www.journaldev.com/> .}
+11. [JournalDev. How to calculate BLEU score using Phython. 2020.] \texttt{<https://www.journaldev.com/> .}
 
 12. Andrea Galassi , Marco Lippi , and Paolo Torroni.Attention in Natural Language Processing. 2020.
 
-13. Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin. 2017.Attention Is All You Need.\textit{ arXiv preprint arXiv:1706.03762 }.
+13. [Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin. 2017.Attention Is All You Need.](arXiv preprint arXiv:1706.03762)
 
-14. Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio. 2016.Neural Machine Translation by Jointly Learning to Align and Translate.\textit{ arXiv preprint arXiv:1409.0473  }.
+14. [Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio. 2016.Neural Machine Translation by Jointly Learning to Align and Translate.](arXiv preprint arXiv:1409.0473)
 
-15. Kishore Papineni, Salim Roukos,Todd Ward, and Wei-Jing Zhu. Bleu: a method for automatic evaluation of machine translation. In\textit{ Proceedings of the 40th annual meeting on association for computational linguistics 2002 }, pages 311–318
+15. Kishore Papineni, Salim Roukos,Todd Ward, and Wei-Jing Zhu. Bleu: a method for automatic evaluation of machine translation. Proceedings of the 40th annual meeting on association for computational linguistics 2002 , pages 311–318
 
-16. Pierre Sermanet, David Eigen, Xiang Zhang, Michael Mathieu, Rob Fergus, and Yann LeCun. 2013. Overfeat: Integrated recognition, localization and detection using convolutional networks.
-\textit{arXiv preprint arXiv:1312.6229}
+16. [Pierre Sermanet, David Eigen, Xiang Zhang, Michael Mathieu, Rob Fergus, and Yann LeCun. 2013. Overfeat: Integrated recognition, localization and detection using convolutional networks.](arXiv preprint arXiv:1312.6229}
 
-17. Simonyan and Zisserman2014] Karen Simonyan and Andrew Zisserman. 2014. Very deep convolutional networks for large-scale image recognition.\textit{ arXiv preprint arXiv:1409.1556.}
+17. [Simonyan and Zisserman2014 Karen Simonyan and Andrew Zisserman. 2014. Very deep convolutional networks for large-scale image recognition.](arXiv preprint arXiv:1409.1556.)
 
 18. [Harshall Lamba. 2019.A Guide to build Sequence to sequence models using LSTM.](https://towardsdatascience.com/.)
 
 19. [Szegedy et al.2015] Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir Anguelov, Dumitru Erhan, Vincent Vanhoucke, and Andrew Rabinovich. 2015. Going deeper with convolutions.
 
-20. Karen Simonyan, Andrew Zisserman. 2014. Very Deep Convolutional Networks for Large-Scale Image Recognition.\textit{arXiv preprint  arXiv:1409.1556}
-21.Justin Johnson, Andrej Karpathy, Li Fei-Fei. 2015. DenseCap: Fully Convolutional Localization Networks for Dense Captioning.\textit{ arXiv preprint  arXiv:1511.07571.}
+20. [Karen Simonyan, Andrew Zisserman. 2014. Very Deep Convolutional Networks for Large-Scale Image Recognition.](arXiv preprint  arXiv:1409.1556)
 
-22. Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan. 2015. Show and Tell: A Neural Image Caption Generator.\textit{ arXiv preprint   arXiv:1411.4555.}
+21. [Justin Johnson, Andrej Karpathy, Li Fei-Fei. 2015. DenseCap: Fully Convolutional Localization Networks for Dense Captioning.](arXiv preprint  arXiv:1511.07571.)
+
+22. [Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan. 2015. Show and Tell: A Neural Image Caption Generator.](arXiv preprint   arXiv:1411.4555.)
 
 23. [Russakovsky et al.2015] Olga Russakovsky, Jia Deng,Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla,Michael Bernstein, et al. 2015. Imagenet large scale visual recognition challenge. IJCV, 115(3):211–252.
 
-24. Vihar Kurama. 2020. A Review of Popular Deep Learning Architectures: ResNet, InceptionV3, and SqueezeNet\\\texttt{https://blog.paperspace.com/tag/deep-learning/.}
+24. [Vihar Kurama. 2020. A Review of Popular Deep Learning Architectures: ResNet, InceptionV3, and SqueezeNet](https://blog.paperspace.com/tag/deep-learning/.)
 
-25. Blaine Rister,Dieterich Lawson. 2016. Image Captioning with Attention \\\texttt{http://cs231n.stanford.edu/reports/2016/pdfs.}
+25. [Blaine Rister,Dieterich Lawson. 2016. Image Captioning with Attention] (http://cs231n.stanford.edu/reports/2016/pdfs.)
