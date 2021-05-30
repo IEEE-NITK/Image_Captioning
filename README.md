@@ -219,7 +219,7 @@ We have developed a neural network architecture for image captioning and reporte
 The authors would like to thank IEEE for conducting envision project and Mentors for their support,friendly advice and inspiration to do this work.
 
 ###**REFERENCES**###
-     1.Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens , and Zbigniew Wojna. Rethinking the Inception Architecture for Computer Vision. 2015.\textit{ arXiv preprint arXiv:1512.00567 }
+     1.Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens , and Zbigniew Wojna. Rethinking the Inception Architecture for Computer Vision. 2015.\textit{ arXiv preprint arXiv:1512.00567 }\newline
      2.Kyunghyun Cho, Bart Van Merrienboer,Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares,Holger Schwenk, and Yoshua Bengio. 2014. Learning phrase representations using rnn encoder-decoder for statistical machine translation.\textit{ arXiv preprint arXiv:1406.1078. }.
      3.Gabriel Loye, Attention Mechanism. 2015. \\\texttt{https://blog.floydhub.com/}
      4.Understanding LSTM Models. 2015.\\\texttt{https://colah.github.io/}
