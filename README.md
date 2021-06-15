@@ -13,8 +13,6 @@
 4. Inbasekaran.P
 5. K A Gaganashree
 
-Google meet: [View Project](https://meet.google.com/efz-jzkd-ewa)
-
 ### **ABSTRACT**
 
 In this project, we systematically analyze a deep neural networks based image caption generation method. With an image as the input, the method can output an English sentence describing the content in the image.We analyze three components of the method: Convolutional Neural Network (CNN), Recurrent Neural Network (RNN) and sentence generation. By replacing the CNN part with three state-of-the-art architectures, we find the Inception v3 performs best according to the BLEU (Bilingual Evaluation Understudy) score. We also propose a simplified version the Gated Recurrent Units (GRU) as a new recurrent layer. The simplified GRU achieves comparable result when it is compared with the long short-term memory (LSTM) method. But it has few parameters which saves memory and is faster in training. Finally, we generate multiple sentences using Greedy Search. The experiments show that the modified method can generate captions comparable to the-state-of-the-art methods with less training memory
