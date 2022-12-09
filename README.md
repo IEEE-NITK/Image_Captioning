@@ -84,7 +84,7 @@ The standard seq2seq model is generally unable to accurately process long input 
 Bahdanau’s Attention, commonly referred to as Additive Attention, came from a paper by Dzmitry Bahdanau. The model aimed at improving the sequence-to-sequence model in machine translation by aligning the decoder with the relevant input sentences and thereby implementing Attention.
 
 <p align="center">
-  <img src="./Images/decoder.jpg" alt="decoder" style="width:400px;"/>
+  <img src="./Images/decoder.JPG" alt="decoder" style="width:400px;"/>
 </p>
 
 #### **B.Steps involved in Attention Mechanism**
